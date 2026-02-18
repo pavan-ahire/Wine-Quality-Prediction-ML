@@ -313,17 +313,17 @@ elif menu == "Model Prediction":
     st.markdown("""
     <style>
 
-    html, body, [data-testid="stAppViewContainer"] {
-        background-color: #f4f6f8;
-    }
+    # html, body, [data-testid="stAppViewContainer"] {
+    #     background-color: #f4f6f8;
+    # }
 
-    [data-testid="stHeader"] {
-        background: rgba(0,0,0,0);
-    }
+    # [data-testid="stHeader"] {
+    #     background: rgba(0,0,0,0);
+    # }
 
-    .block-container {
-        padding-top: 2rem;
-    }
+    # .block-container {
+    #     padding-top: 2rem;
+    # }
 
     # h1 { color: #3a0ca3; }
     # h2, h3 { color: #6a040f; }
@@ -516,6 +516,7 @@ div.stButton > button:first-child:hover {
     st.divider()
     st.info("📌 **Note:** Predictions are based on historical wine quality data.")
     #st.info("📊 Machine Learning Powered | Streamlit App | Created by Pavan Ahire")
+
 
 
 
