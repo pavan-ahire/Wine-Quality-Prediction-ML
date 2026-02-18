@@ -21,6 +21,8 @@ The project includes:
 The project is deployed using **Streamlit Cloud**, providing both prediction and analytics capabilities.
 
 ### 🔗 Live Links
+- **Wine Quality Dashboard and  Prediction App**
+  👉 https://wine-quality-dashboard-and-prediction.streamlit.app/
 - **Wine Quality Prediction App**  
   👉 https://wine-quality-prediction-machine-learning.streamlit.app/
 
