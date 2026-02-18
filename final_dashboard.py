@@ -159,6 +159,25 @@ if menu == "Dashboard":
         st.write(f"Shape of dataset: {df.shape}")
         st.write(f"Total rows: {df.shape[0]}")
         st.write(f"Total columns: {df.shape[1]}")
+        
+        st.write("### Column Description")
+        column_info = {
+            "fixed acidity": "Amount of fixed acids (tartaric acid) in wine.",
+            "volatile acidity": "Amount of acetic acid; high values give vinegar taste.",
+            "citric acid": "Adds freshness and flavor to wine.",
+            "residual sugar": "Sugar remaining after fermentation.",
+            "chlorides": "Salt content in wine.",
+            "free sulfur dioxide": "SO2 available to prevent oxidation.",
+            "total sulfur dioxide": "Total amount of SO2 in wine.",
+            "density": "Density of wine; related to sugar and alcohol content.",
+            "pH": "Acidity level of wine.",
+            "sulphates": "Wine additive contributing to preservation.",
+            "alcohol": "Alcohol percentage in wine.",
+            "quality": "Wine quality score (target variable)."
+        }
+        for col, desc in column_info.items():
+            st.write(f"**{col}** : {desc}")
+            
 
         st.subheader("Statistical Summary")
         st.dataframe(df.describe())
@@ -539,3 +558,4 @@ div.stButton > button:first-child:hover {
     st.divider()
     st.info("📌 **Note:** Predictions are based on historical wine quality data.")
     #st.info("📊 Machine Learning Powered | Streamlit App | Created by Pavan Ahire")
+
