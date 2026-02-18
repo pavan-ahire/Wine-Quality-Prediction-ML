@@ -175,8 +175,10 @@ if menu == "Dashboard":
             "alcohol": "Alcohol percentage in wine.",
             "quality": "Wine quality score (target variable)."
         }
-        for col, desc in column_info.items():
-            st.write(f"**{col}** : {desc}")
+        column_df = pd.DataFrame(
+        list(column_info.items()),
+        columns=["Column Name", "Description"]
+        )
             
 
         st.subheader("Statistical Summary")
@@ -558,4 +560,5 @@ div.stButton > button:first-child:hover {
     st.divider()
     st.info("📌 **Note:** Predictions are based on historical wine quality data.")
     #st.info("📊 Machine Learning Powered | Streamlit App | Created by Pavan Ahire")
+
 
