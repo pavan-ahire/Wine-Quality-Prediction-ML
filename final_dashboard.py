@@ -310,7 +310,7 @@ elif menu == "Model Prediction":
     # ===============================
     # PREMIUM UI CSS (same as app.py)
     # ===============================
-    st.markdown("""
+    #st.markdown("""
     <style>
 
     html, body, [data-testid="stAppViewContainer"] {
@@ -516,3 +516,4 @@ div.stButton > button:first-child:hover {
     st.divider()
     st.info("📌 **Note:** Predictions are based on historical wine quality data.")
     #st.info("📊 Machine Learning Powered | Streamlit App | Created by Pavan Ahire")
+
