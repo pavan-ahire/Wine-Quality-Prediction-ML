@@ -310,68 +310,68 @@ elif menu == "Model Prediction":
     # ===============================
     # PREMIUM UI CSS (same as app.py)
     # ===============================
-    # st.markdown("""
-    # <style>
+    st.markdown("""
+    <style>
 
-    # html, body, [data-testid="stAppViewContainer"] {
-    #     background-color: #f4f6f8;
-    # }
+    html, body, [data-testid="stAppViewContainer"] {
+        background-color: #f4f6f8;
+    }
 
-    # [data-testid="stHeader"] {
-    #     background: rgba(0,0,0,0);
-    # }
+    [data-testid="stHeader"] {
+        background: rgba(0,0,0,0);
+    }
 
-    # .block-container {
-    #     padding-top: 2rem;
-    # }
+    .block-container {
+        padding-top: 2rem;
+    }
 
     # h1 { color: #3a0ca3; }
     # h2, h3 { color: #6a040f; }
 
-    # .card {
-    #     background-color: #ffffff;
-    #     padding: 22px;
-    #     border-radius: 14px;
-    #     box-shadow: 0 8px 18px rgba(0,0,0,0.08);
-    #     margin-bottom: 25px;
-    # }
+    .card {
+        background-color: #ffffff;
+        padding: 22px;
+        border-radius: 14px;
+        box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+        margin-bottom: 25px;
+    }
 
-    # div[data-baseweb="slider"] > div {
-    #     color: #9d0208;
-    # }
+    div[data-baseweb="slider"] > div {
+        color: #9d0208;
+    }
 
-    # .result-card {
-    #     padding: 22px;
-    #     border-radius: 14px;
-    #     text-align: center;
-    #     font-size: 22px;
-    #     font-weight: bold;
-    #     margin-top: 10px;
-    # }
+    .result-card {
+        padding: 22px;
+        border-radius: 14px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
 
-    # .excellent {
-    #     background: linear-gradient(135deg, #d8f3dc, #b7e4c7);
-    #     color: #1b4332;
-    # }
+    .excellent {
+        background: linear-gradient(135deg, #d8f3dc, #b7e4c7);
+        color: #1b4332;
+    }
 
-    # .good {
-    #     background: linear-gradient(135deg, #e0fbfc, #cce3de);
-    #     color: #005f73;
-    # }
+    .good {
+        background: linear-gradient(135deg, #e0fbfc, #cce3de);
+        color: #005f73;
+    }
 
-    # .average {
-    #     background: linear-gradient(135deg, #fff3cd, #ffe8a1);
-    #     color: #7c2d12;
-    # }
+    .average {
+        background: linear-gradient(135deg, #fff3cd, #ffe8a1);
+        color: #7c2d12;
+    }
 
-    # .banner img {
-    #     max-height: 200px;
-    #     object-fit: cover;
-    #     border-radius: 14px;
-    # }
+    .banner img {
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 14px;
+    }
 
-    # </style>
-    # """, unsafe_allow_html=True)
+    </style>
+    """, unsafe_allow_html=True)
 
     # ===============================
     # LOAD MODEL & SCALER
@@ -516,5 +516,6 @@ div.stButton > button:first-child:hover {
     st.divider()
     st.info("📌 **Note:** Predictions are based on historical wine quality data.")
     #st.info("📊 Machine Learning Powered | Streamlit App | Created by Pavan Ahire")
+
 
 
