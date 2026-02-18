@@ -179,8 +179,8 @@ if menu == "Dashboard":
         list(column_info.items()),
         columns=["Column Name", "Description"]
         )
+        st.table(column_df)
             
-
         st.subheader("Statistical Summary")
         st.dataframe(df.describe())
 
@@ -560,5 +560,6 @@ div.stButton > button:first-child:hover {
     st.divider()
     st.info("📌 **Note:** Predictions are based on historical wine quality data.")
     #st.info("📊 Machine Learning Powered | Streamlit App | Created by Pavan Ahire")
+
 
 
