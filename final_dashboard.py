@@ -30,7 +30,7 @@ categorical_cols = df.select_dtypes(include=['object']).columns.tolist()
 st.markdown("""
 <style>
 .kpi-card {
-    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    background: linear-gradient(135deg, #1f77b4, #0d47a1);
     padding:18px;
     border-radius:12px;
     text-align:center;
@@ -560,6 +560,7 @@ div.stButton > button:first-child:hover {
     st.divider()
     st.info("📌 **Note:** Predictions are based on historical wine quality data.")
     #st.info("📊 Machine Learning Powered | Streamlit App | Created by Pavan Ahire")
+
 
 
 
