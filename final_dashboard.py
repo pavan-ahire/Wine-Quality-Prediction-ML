@@ -51,7 +51,7 @@ st.markdown("""
 st.markdown("""
 <style>
 
-/* Tabs container */
+/* Tabs container spacing */
 .stTabs [data-baseweb="tab-list"] {
     gap: 20px;
 }
@@ -59,12 +59,19 @@ st.markdown("""
 /* Default tab style */
 .stTabs [data-baseweb="tab"] {
     background-color: #f2f2f2;
+    color: #333333 !important;   /* ✅ FIX: force visible text */
     border-radius: 8px 8px 0px 0px;
     padding: 10px 18px;
     font-weight: 500;
 }
 
-/* Selected tab style */
+/* Hover effect */
+.stTabs [data-baseweb="tab"]:hover {
+    background-color: #e6e6e6;
+    color: #000000 !important;
+}
+
+/* Selected tab */
 .stTabs [aria-selected="true"] {
     background-color: #ff4b4b !important;
     color: white !important;
@@ -74,6 +81,7 @@ st.markdown("""
 
 </style>
 """, unsafe_allow_html=True)
+
 
 # ================= KPI FUNCTION =================
 def show_kpis():
@@ -560,6 +568,7 @@ div.stButton > button:first-child:hover {
     st.divider()
     st.info("📌 **Note:** Predictions are based on historical wine quality data.")
     #st.info("📊 Machine Learning Powered | Streamlit App | Created by Pavan Ahire")
+
 
 
 
